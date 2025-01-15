@@ -1,5 +1,7 @@
 package ru.otus.java.basic.homeworks.homework3;
 
+// тест удаления таргет
+
 import java.util.Scanner;
 
 public class MainApplication {
