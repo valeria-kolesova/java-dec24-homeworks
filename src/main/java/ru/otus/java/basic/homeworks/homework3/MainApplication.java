@@ -6,6 +6,7 @@ public class MainApplication {
         checkSign(35, 43, 6);
         selectColor();
         compareNumbers();
+        addOrSubtractAndPrint(333,45,false);
     }
 
     public static void greetings() {
@@ -42,6 +43,14 @@ public class MainApplication {
             System.out.println("a >= b");
         } else {
             System.out.println("a < b");
+        }
+    }
+
+    public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
+        if (increment) {
+            System.out.println(initValue + delta);
+        } else {
+            System.out.println(initValue - delta);
         }
     }
 
