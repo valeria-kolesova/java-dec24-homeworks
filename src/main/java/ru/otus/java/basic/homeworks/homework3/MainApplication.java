@@ -2,11 +2,10 @@ package ru.otus.java.basic.homeworks.homework3;
 
 public class MainApplication {
     public static void main(String[] args) {
-
         greetings();
         checkSign(35, 43, 6);
         selectColor();
-
+        compareNumbers();
     }
 
     public static void greetings() {
@@ -14,7 +13,6 @@ public class MainApplication {
         System.out.println("World");
         System.out.println("from");
         System.out.println("Java");
-
     }
 
     public static void checkSign(int a, int b, int c) {
@@ -24,7 +22,6 @@ public class MainApplication {
         } else {
             System.out.println("Сумма отрицательная");
         }
-
     }
 
     public static void selectColor() {
@@ -38,5 +35,14 @@ public class MainApplication {
         }
     }
 
+    public static void compareNumbers() {
+        int a = 39;
+        int b = 56;
+        if (a >= b) {
+            System.out.println("a >= b");
+        } else {
+            System.out.println("a < b");
+        }
+    }
 
 }
