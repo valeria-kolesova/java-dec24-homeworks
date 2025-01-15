@@ -1,12 +1,25 @@
 package ru.otus.java.basic.homeworks.homework3;
 
+import java.util.Scanner;
+
 public class MainApplication {
     public static void main(String[] args) {
-        greetings();
-        checkSign(35, 43, 6);
-        selectColor();
-        compareNumbers();
-        addOrSubtractAndPrint(333,45,false);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число от 1 до 5");
+        int number = scanner.nextInt();
+        if (number == 1) {
+            greetings();
+        } else if (number == 2) {
+            checkSign(35, 43, 6);
+        } else if (number == 3) {
+            selectColor();
+        } else if (number == 4) {
+            compareNumbers();
+        } else if (number == 5) {
+            addOrSubtractAndPrint(333, 45, false);
+        } else {
+            System.out.println("Вы ввели что-то не то - попробуйте снова");
+        }
     }
 
     public static void greetings() {
